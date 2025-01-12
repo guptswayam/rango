@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 func main() {
@@ -10,7 +9,9 @@ func main() {
 
 	fmt.Println("Rango is working...")
 
-	time.Sleep(time.Second * 5)
+	// time.Sleep(time.Second * 5)
+
+	DeleteFiles()
 
 	fmt.Println("Closing Rango!")
 
