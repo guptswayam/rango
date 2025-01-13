@@ -16,8 +16,6 @@ func EncryptFile(aes32Key []byte, folderPath string, fileName string) {
 	filePath := filepath.Join(folderPath, fileName)
 	plainTextBytes, _ := os.ReadFile(filePath)
 
-	fmt.Println(string(plainTextBytes))
-
 	// Encrypt the file
 	block, _ := aes.NewCipher(aes32Key)
 	ciphertext := make([]byte, aes.BlockSize+len(plainTextBytes))
