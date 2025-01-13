@@ -3,6 +3,7 @@ package decrypter
 import (
 	"crypto/aes"
 	"crypto/cipher"
+	"fmt"
 	"os"
 	"path/filepath"
 )
@@ -27,8 +28,13 @@ func DecryptFile(aes32Key []byte, folderPath string, fileName string) {
 
 	// Move the decrypted file
 	destinationPath := filepath.Join(folderPath, fileName[:len(fileName)-6])
-	err = os.WriteFile(destinationPath, ciphertext, 0644)
+	os.WriteFile(destinationPath, ciphertext, 0644)
 
 	// Delete the encrypted file
-	os.Remove(filePath)
+	err = os.Remove(filePath)
+	if err != nil {
+		fmt.Printf("Error deleting file %s: %v\n", fileName, err)
+	} else {
+		fmt.Printf("Deleted file: %s\n", fileName)
+	}
 }
