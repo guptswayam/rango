@@ -1,0 +1,1 @@
+echo "$1" | base64 -d | openssl rsautl -decrypt -inkey id_rsa.pem | base64
