@@ -1,6 +1,6 @@
 # Rango: The Smallest Ransomware
 It encrypts the txt files that exist in **Documents** folder.\
-Don't believe? Download and unzip the windows-setup.zip file. Run the installer.exe file and see the magic.
+Don't believe? Download and unzip the moneygo-setup.zip file. Run the install.exe file and see the magic.
 
 ---
 
