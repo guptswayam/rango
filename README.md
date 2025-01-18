@@ -20,3 +20,11 @@ Don't believe? Download and unzip the moneygo-setup.zip file. Run the install.ex
 2. Victim needs to run `unistall.exe` from the downloaded zip file.
 3. It will start the program on command prompt and ask to provide the aes key.
 4. Once the victim enters the aes key, the program will decrypt all the encrypted txt files from Documents folder and close itself.
+
+
+## Resources
+1. https://dev.to/paulwababu/how-to-make-ransomware-with-python-windows-mac-and-linux-142g
+2. https://github.com/paulwababu/ransomware-golang
+3. https://github.com/crvvdev/cpp-ransomware
+4. https://www.tarlogic.com/blog/ransomware-developed-golang/
+5. https://medium.com/@andrei_rat/how-to-run-go-on-android-5e8fbd90ddc6
